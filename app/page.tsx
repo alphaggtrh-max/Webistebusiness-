@@ -1,6 +1,7 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 
 const services = [
   { n: "01", title: "Trockenbau", text: "Flexible Wände, Decken und Raumlösungen – passgenau geplant und sorgfältig umgesetzt.", tag: "Unser Schwerpunkt" },
