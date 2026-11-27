@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
-:root{--brand:#75201B;--brand-dark:#551713;--ink:#171717;--text:#34302F;--muted:#716B68;--paper:#F3F1EF;--white:#fff;--line:#E4DEDA;--body:"DM Sans",Arial,sans-serif;--display:"Manrope","DM Sans",Arial,sans-serif;--container:1160px}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+:root{--brand:#75201B;--brand-dark:#551713;--ink:#171717;--text:#34302F;--muted:#716B68;--paper:#F3F1EF;--white:#fff;--line:#E4DEDA;--body:"IBM Plex Sans",Arial,sans-serif;--display:"IBM Plex Sans",Arial,sans-serif;--container:1160px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;color:var(--ink);background:#fff;font:16px/1.7 var(--body);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}img{max-width:100%;display:block}.container{width:min(var(--container),calc(100% - 48px));margin-inline:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #D08A80;outline-offset:3px}
 .topbar{background:var(--brand);color:#fff;font-size:11px}.topbar-inner{min-height:36px;display:flex;justify-content:space-between;align-items:center;gap:16px}.topbar a{font-weight:700}
 .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.header-inner{min-height:98px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;width:96px;flex:0 0 96px}.brand img{width:100%;height:86px;object-fit:contain}.nav{display:flex;align-items:center;gap:clamp(18px,3vw,38px);font-size:13px;font-weight:700}.nav>a:not(.nav-cta):hover{color:var(--brand)}.nav-cta{display:inline-flex;align-items:center;gap:18px;padding:13px 17px;background:var(--brand);color:#fff;transition:background .2s,transform .2s}.nav-cta:hover,.button-red:hover{background:var(--brand-dark);transform:translateY(-2px)}.nav-cta b{font-size:17px}.menu-toggle{display:none}
@@ -53,3 +53,17 @@
 .contact-page .contact-details a,.contact-page .contact-details p{color:#fff}
 @media(max-width:900px){.two-column{gap:38px}.detail-service{grid-template-columns:55px 1fr;gap:20px}.detail-service .inline-link{grid-column:2;justify-self:start}.project-grid-page{grid-template-columns:1fr 1fr}.project-grid-page .project img,.project-grid-page .project-large img{height:270px}}
 @media(max-width:680px){.page-intro{padding:75px 0 65px}.page-intro h1{font-size:48px}.page-lead{font-size:14px}.two-column{grid-template-columns:1fr;gap:25px}.two-column h2{font-size:42px}.detail-service{grid-template-columns:35px 1fr;gap:13px;padding:32px 0}.detail-service h2{font-size:32px}.detail-service .inline-link{grid-column:2}.home-cta-inner{align-items:flex-start;flex-direction:column}.home-cta{padding:62px 0}.project-grid-page{grid-template-columns:1fr}.project-grid-page .project img,.project-grid-page .project-large img{height:235px}.contact-page .contact-grid{grid-template-columns:1fr}}
+
+/* Refined corporate typography: one restrained type family throughout */
+body{font-family:var(--body);font-size:16px;line-height:1.72;letter-spacing:0}
+h1,h2,h3,h4,.hero h1,.page-intro h1,.two-column h2,.detail-service h2,.section-heading h2,.map-heading h2,.home-cta h2,.form-panel h3{font-family:var(--display);font-weight:600;letter-spacing:-.035em}
+.hero h1{font-size:clamp(50px,6.6vw,78px);line-height:1.08;letter-spacing:-.045em;font-weight:600}
+.page-intro h1{font-size:clamp(46px,5.8vw,68px);letter-spacing:-.04em;font-weight:600}
+.hero h1 em,h2 em,.page-intro h1 em,.two-column h2 em,.home-cta h2 em{font-family:inherit;font-style:normal;font-weight:600;letter-spacing:inherit;color:#D9A49D}
+.page-intro h1 em,.two-column h2 em,.section-heading h2 em,.map-heading h2 em{color:var(--brand)}
+.section-heading h2,.intro h2,.map-heading h2,.two-column h2{font-weight:600;letter-spacing:-.04em}
+.service-card h3,.form-panel h3{font-weight:600;letter-spacing:-.025em}
+.eyebrow{font-weight:700;letter-spacing:.13em}
+.nav{font-weight:600}
+.button,.inline-link,.service-card>a{font-weight:700}
+@media(max-width:680px){.hero h1{font-size:clamp(46px,12vw,62px)}.page-intro h1{font-size:clamp(42px,11vw,54px)}}
